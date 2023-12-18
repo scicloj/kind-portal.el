@@ -1,6 +1,6 @@
 # kind-portal.el
 
-<img src="https://raw.githubusercontent.com/scicloj/graphic-design/live/icons/Kindly.svg" alt="Clay" align="right" width="128"/>
+<img src="https://raw.githubusercontent.com/scicloj/graphic-design/live/icons/Kindly.svg" alt="Kindly" align="right" width="128"/>
 <img src="https://raw.githubusercontent.com/djblue/portal/master/resources/splash.svg" alt="Portal" align="right" width="128"/>
 <img src="https://www.gnu.org/savannah-checkouts/gnu/emacs/images/emacs.png" alt="Emacs" align="right" width="128"/>
 

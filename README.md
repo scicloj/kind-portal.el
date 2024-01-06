@@ -8,7 +8,9 @@ Emacs bindings for the [kind-portal](https://github.com/scicloj/kind-portal) ada
 
 ## Usage
 
-Using [use-package](https://github.com/jwiegley/use-package), you may load the package as follows:
+### Loading the package
+
+Using [use-package](https://github.com/jwiegley/use-package) and [straight](https://github.com/radian-software/straight.el), you may load the package as follows:
 
 ```elisp
 (use-package kind-portal
@@ -17,6 +19,16 @@ Using [use-package](https://github.com/jwiegley/use-package), you may load the p
              :host github
              :repo "scicloj/kind-portal.el"))
 ```
+
+Using [use-package](https://github.com/jwiegley/use-package) and [vc-use-package](https://github.com/slotThe/vc-use-package), you may load the package as follows:
+
+```elisp
+(use-package kind-portal
+  :vc (:fetcher github :repo scicloj/kind-portal.el))
+```
+
+
+### API
 
 The package offers the following functions, that you may wish to create keybindings for:
 |name|function|

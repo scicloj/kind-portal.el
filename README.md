@@ -6,9 +6,11 @@ Emacs bindings for the [kind-portal](https://github.com/scicloj/kind-portal) ada
 
 ## Usage
 
-### Loading the package
+### Installing & loading
 
-Using [use-package](https://github.com/jwiegley/use-package) and [straight](https://github.com/radian-software/straight.el), you may load the package as follows:
+Soon, this package will hopefully be in [MELPA](https://melpa.org/). Till then, you may install & load it in the following ways using [use-package](https://github.com/jwiegley/use-package).
+
+Using [straight](https://github.com/radian-software/straight.el), you may load the package as follows:
 
 ```elisp
 (use-package kind-portal
@@ -18,13 +20,12 @@ Using [use-package](https://github.com/jwiegley/use-package) and [straight](http
              :repo "scicloj/kind-portal.el"))
 ```
 
-Using [use-package](https://github.com/jwiegley/use-package) and [vc-use-package](https://github.com/slotThe/vc-use-package), you may load the package as follows:
+Using [vc-use-package](https://github.com/slotThe/vc-use-package), you may load the package as follows:
 
 ```elisp
 (use-package kind-portal
   :vc (:fetcher github :repo scicloj/kind-portal.el))
 ```
-
 
 ### API
 

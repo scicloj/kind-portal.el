@@ -1,4 +1,4 @@
-;;; kind-portal.el --- Emacs bindings for the kind-portal adapter (Clojure Kindly visualizations in Portal)  -*- lexical-binding: t; -*-
+;;; kind-portal.el --- Emacs commands for Clojure Kindly visualizations in Portal  -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2023 Scicloj
 
@@ -24,7 +24,7 @@
 
 ;;; Commentary:
 
-;; Emacs Commands for Clojure's kind-portal, adapting Portal to Kindly
+;; Emacs commands for Clojure Kindly visualizations in Portal
 
 ;;; Code:
 

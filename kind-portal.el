@@ -4,6 +4,10 @@
 
 ;; Author: daslu <daslu@daslu-ThinkPad-P14s-Gen-3>
 ;; Keywords: lisp
+;; URL: https://github.com/scicloj/kind-portal.el
+;; Version: 1.0
+
+;; Package-Requires: ((emacs "26.1") (cider "1.0"))
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -20,11 +24,15 @@
 
 ;;; Commentary:
 
+;; This package provides Emacs bindings for the [kind-portal](https://github.com/scicloj/kind-portal) adapter of Clojure [Kindly](https://scicloj.github.io/kindly/) visualizations to the [Portal](https://github.com/djblue/portal) tool.
 ;;
 
 ;;; Code:
 
+(require 'cider)
+
 (defun kind-portal-open-if-needed ()
+  "Open the Portal view if you haven't yet."
   (interactive)
   (cider-interactive-eval "
     (require '[scicloj.kind-portal.v1.api])
@@ -32,6 +40,7 @@
   t)
 
 (defun kind-portal-send (code)
+  "Eval & submit a given piece of Clojure CODE to Portal, adapted for Kindly."
   (cider-interactive-eval
    (concat "
      (require '[portal.api]
@@ -40,10 +49,12 @@
      (scicloj.kind-portal.v1.api/kindly-submit-context {:form (quote " code ")})")))
 
 (defun kind-portal-send-last-sexp ()
+  "Eval & submit the last Clojure form before the cursor to Portal, adapted for Kindly."
   (interactive)
   (kind-portal-send (cider-last-sexp)))
 
 (defun kind-portal-send-defun-at-point ()
+  "Eval & submit the top-level Clojure form at the cursor to Portal, adapted for Kindly."
   (interactive)
   (kind-portal-send (thing-at-point 'defun)))
 

@@ -24,8 +24,7 @@
 
 ;;; Commentary:
 
-;; This package provides Emacs bindings for the [kind-portal](https://github.com/scicloj/kind-portal) adapter of Clojure [Kindly](https://scicloj.github.io/kindly/) visualizations to the [Portal](https://github.com/djblue/portal) tool.
-;;
+;; Emacs Commands for Clojure's kind-portal, adapting Portal to Kindly
 
 ;;; Code:
 

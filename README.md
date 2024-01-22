@@ -2,7 +2,7 @@
 
 [![License GPL 3][badge-license]](http://www.gnu.org/licenses/gpl-3.0.txt)
 
-Emacs bindings for the [kind-portal](https://github.com/scicloj/kind-portal) adapter of Clojure [Kindly](https://scicloj.github.io/kindly/) visualizations to the [Portal](https://github.com/djblue/portal) tool
+Emacs bindings for the [kind-portal](https://github.com/scicloj/kind-portal) adapter of Clojure [Kindly](https://scicloj.github.io/kindly/) visualizations to the [Portal](https://github.com/djblue/portal) tool.
 
 ## Usage
 
@@ -33,8 +33,8 @@ The package offers the following functions, that you may wish to create keybindi
 |name|function|
 |--|--|
 |`kind-portal-open-if-needed`|Open the Portal view if you haven't yet.|
-|`kind-portal-send-last-sexp`|Submit the Clojure form in last s-expression to Portal, adapted for Kindly|
-|`kind-portal-send-defun-at-point`|Submit the Clojure form at the [defun-at-point](https://www.emacswiki.org/emacs/ThingAtPoint) to Portal, adapted for Kindly|
+|`kind-portal-send-last-sexp`|Eval & submit the Clojure form in last s-expression to Portal, adapted for Kindly.|
+|`kind-portal-send-defun-at-point`|Eval & submit the Clojure form at the [defun-at-point](https://www.emacswiki.org/emacs/ThingAtPoint) to Portal, adapted for Kindly.|
 
 ## License
 
